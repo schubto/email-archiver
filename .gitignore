@@ -1,10 +1,122 @@
-*.db
-*.log
+# Standard Python .gitignore (basierend auf GitHub's Python template)
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+.venv_*/
+venv.bak/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django / Flask / DB
+local_settings.py
+instance/
+.webassets-cache
+db.sqlite3
+db.sqlite3-journal
+
+# Jupyter
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# dotenv
 .env
-__pycache__
-.venv
+.env.*
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Misc
+*.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
 .dockerignore
+
+# Frontend / Node
+frontend/briefbox-front/node_modules/
+frontend/briefbox-front/build/
+frontend/briefbox-front/dist/
+frontend/briefbox-front/.env
+frontend/briefbox-front/.env.local
+
+# Project-specific (beibehalten aus ursprünglicher Datei)
 tests
 frontend/briefbox-front/src/pages/dump_files.py
 frontend/briefbox-front/src/pages/output.txt
 backend/data/email_archive.db-journal
+
+# Ende der .gitignore
